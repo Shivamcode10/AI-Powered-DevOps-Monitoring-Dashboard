@@ -1,13 +1,11 @@
 # 🚀 AI-Powered DevOps Monitoring Dashboard
----
+
+🔗 **Live Demo:** *(Add your deployed link here)*
 
 ## 📌 Project Overview
 
 AI-Powered DevOps Monitoring Dashboard is a **cloud-native microservices platform** that monitors system performance, visualizes real-time metrics, and provides AI-driven insights.
-
-It combines **DevOps, AI, and Full Stack technologies** to build a scalable, production-ready monitoring system.
-
----
+It combines **DevOps, AI, and Full Stack technologies** to build a scalable, production-ready system with **self-healing capabilities**.
 
 ## 🛠️ Tech Stack
 
@@ -17,8 +15,6 @@ It combines **DevOps, AI, and Full Stack technologies** to build a scalable, pro
 **Database & Cache:** MongoDB, Redis
 **Monitoring:** Prometheus, Grafana
 **DevOps:** Docker, Kubernetes, NGINX
-
----
 
 ## ✨ Features
 
@@ -43,7 +39,7 @@ It combines **DevOps, AI, and Full Stack technologies** to build a scalable, pro
 
 ### 📈 Metrics & Visualization
 
-* CPU & memory usage
+* CPU & memory usage tracking
 * Performance monitoring
 * Grafana dashboards
 
@@ -51,6 +47,13 @@ It combines **DevOps, AI, and Full Stack technologies** to build a scalable, pro
 
 * ML-based predictions
 * FastAPI inference service
+* Data-driven decisions
+
+### 🔄 Self-Healing (🔥 Highlight)
+
+* Detects failed/unhealthy services
+* Kubernetes auto-restarts pods
+* High availability & fault tolerance
 
 ### 🛡️ DevOps & Scalability
 
@@ -59,15 +62,11 @@ It combines **DevOps, AI, and Full Stack technologies** to build a scalable, pro
 * Horizontal Pod Autoscaling (HPA)
 * NGINX API Gateway
 
----
-
 ## 🎯 User Experience
 
 * Clean and responsive UI
 * Real-time updates
 * Easy navigation
-
----
 
 ## 🚀 Getting Started
 
@@ -78,12 +77,9 @@ docker-compose up --build
 ```
 
 **Access:**
-
-* Frontend → http://localhost:3000
-* Grafana → http://localhost:3001
-* Prometheus → http://localhost:9090
-
----
+Frontend → http://localhost:3000
+Grafana → http://localhost:3001
+Prometheus → http://localhost:9090
 
 ## ☸️ Kubernetes Deployment
 
@@ -91,15 +87,11 @@ docker-compose up --build
 kubectl apply -f k8s/
 ```
 
----
-
 ## 🔐 Security
 
 * JWT authentication
 * Secure APIs
 * Environment-based configs
-
----
 
 ## 📦 Future Enhancements
 
@@ -108,20 +100,13 @@ kubectl apply -f k8s/
 * Alert system
 * AI anomaly detection
 
----
-
 ## 👨‍💻 Author
 
-**Shivam Lahane**
-Full Stack | DevOps | AI
-
----
+**Shivam Lahane** — Full Stack | DevOps | AI
 
 ## ⭐ Contribution
 
 Feel free to fork and contribute!
-
----
 
 ## 📜 License
 
