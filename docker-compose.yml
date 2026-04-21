@@ -1,0 +1,42 @@
+version: "3.8"
+
+services:
+
+  # 🎨 FRONTEND
+  frontend:
+    build: ./frontend-dashboard
+    ports:
+      - "3000:3000"
+    environment:
+      - NEXT_PUBLIC_AUTH_API=http://localhost/api/auth
+      - NEXT_PUBLIC_BOOKING_API=http://localhost/api/bookings
+      - NEXT_PUBLIC_SYSTEM_API=http://localhost/api/system
+      - NEXT_PUBLIC_AI_API=http://localhost/api/ai
+    restart: always
+
+  # 📊 PROMETHEUS
+  prometheus:
+    image: prom/prometheus
+    container_name: prometheus
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+    restart: always
+
+  # 📈 GRAFANA (🔥 AUTO SETUP ENABLED)
+  grafana:
+    image: grafana/grafana
+    container_name: grafana
+    ports:
+      - "3001:3000"
+    volumes:
+      - grafana_data:/var/lib/grafana
+      - ./grafana/provisioning:/etc/grafana/provisioning 
+    depends_on:
+      - prometheus
+    restart: always
+
+# 🔥 Volume for persistence
+volumes:
+  grafana_data:
