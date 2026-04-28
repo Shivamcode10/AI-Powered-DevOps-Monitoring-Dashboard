@@ -1,6 +1,5 @@
 # 🚀 AI-Powered DevOps Monitoring Dashboard
 
-🔗 **Live Demo:** *(Add your deployed link here)*
 
 ## 📌 Project Overview
 
